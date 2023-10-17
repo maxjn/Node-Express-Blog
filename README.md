@@ -1,6 +1,6 @@
 # Node & Express Refresh
 
-These are some Practical **Node** & **Express** projects for refreshing my memory on  **Node** & **Express**.
+These are some Practical **Node** & **Express** projects for refreshing my memory on **Node** & **Express**.
 
 ## Technologies
 
@@ -11,19 +11,24 @@ These are some Practical **Node** & **Express** projects for refreshing my memor
 ## Features
 
 - Basics
-    - globals
-    - modules
-    - core modules
-    - files
-    - streams & buffer
+  - globals
+  - modules
+  - core modules
+  - files
+  - streams & buffer
 - Server
   - Simple server using **http** module
 - Express
   - Create a server & Listening to it
   - Redirects
   - 404 & use
-- Middleware
-  
+- Blog
+  - Middleware
+  - DB Connection
+  - Mongoose ODM
+  - Shema & Models
+  - Creating URI
+  - Quering DB
 
 ## Installation
 

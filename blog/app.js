@@ -54,12 +54,25 @@ app.get("/blogs", (req, res) => {
     .catch((err) => res.send(err));
 });
 
-app.get("/single-blog", (req, res) => {
+app.get("/blogs/:id", (req, res) => {
   const blogModel = BlogModel;
 
   blogModel
-    .findById("652e34b6736b82c9fbcf0115")
-    .then((result) => res.send(result))
+    .findById(req.params.id)
+    .then((result) =>
+      res.render("details", { title: result.title, blog: result })
+    )
+    .catch((err) => res.send(err));
+});
+
+app.delete("/blogs/:id", (req, res) => {
+  const blogModel = BlogModel;
+
+  blogModel
+    .findByIdAndDelete(req.params.id)
+    .then((result) => {
+      res.json({ redirect: "/blogs" });
+    })
     .catch((err) => res.send(err));
 });
 
