@@ -37,6 +37,7 @@ In each folder that needs do each one of these things
 
 
 ###### Blog & Express
+Create **blog/.env** & from '.env.example' file in blog directory and declare the project environment variables
 
 ```shell
 npm install
@@ -50,6 +51,11 @@ npm run dev
 node { file path }
 
 ```
+
+## Installation (Production)
+
+[Deployment Guid](https://dev.to/kunalukey/how-to-setup-and-deploy-a-mern-stack-project-for-free-5acl)
+
 
 
 ## Screenshots
