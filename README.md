@@ -2,6 +2,8 @@
 
 These are some Practical **Node** & **Express** projects for refreshing my memory on **Node** & **Express**.
 
+See the live **Blog** project [Here!](https://maxjn-express-node-blog.onrender.com)
+
 ## Technologies
 
 - JS
