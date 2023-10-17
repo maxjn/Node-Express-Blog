@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-const blogRouter = require('./routes/blogRoutes')
+const blogRouter = require("./routes/blogRoutes");
 
 require("dotenv").config();
 
@@ -16,7 +16,7 @@ mongoose
   .then((result) => {
     console.log("Connected To DB");
     // listen for requests after connecting to DB
-    app.listen(3000);
+    app.listen(process.env.PORT || 8000);
   })
   .catch((err) => console.log(err));
 
@@ -31,7 +31,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 
 // API Routes
-app.use('/blogs',blogRouter)
+app.use("/blogs", blogRouter);
 
 // View Routes
 app.get("/", (req, res) => {
