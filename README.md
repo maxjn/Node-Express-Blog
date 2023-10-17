@@ -29,19 +29,29 @@ These are some Practical **Node** & **Express** projects for refreshing my memor
   - Shema & Models
   - Creating URI
   - Quering DB
+  - Routing
+  - Controller
 
 ## Installation
-
-###### frontend
-
 In each folder that needs do each one of these things
+
+
+###### Blog & Express
 
 ```shell
 npm install
 
-node {filepath}
+npm run dev
 ```
+
+###### Basics & Server
+
+```shell
+node { file path }
+
+```
+
 
 ## Screenshots
 
-![Cover](./cover.png)
+![Cover](./cover.webp)
